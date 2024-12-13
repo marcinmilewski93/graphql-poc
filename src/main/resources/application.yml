@@ -1,0 +1,13 @@
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+    schema:
+      printer:
+        enabled: true
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/payments}
+    username: ${USERNAME:test}
+    password: ${PASSWORD:test}
+  flyway:
+    enabled: true
