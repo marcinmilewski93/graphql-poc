@@ -1,0 +1,14 @@
+mutation Payment {
+    payment(
+        request: {
+            customerId: "12345",
+            price: "200.50",
+            priceModifier: 1.01,
+            paymentMethod: "AMEX",
+            datetime: "2022-03-01T01:00:00Z",
+            additionalItem: {last4: "987"}
+        }) {
+        finalPrice
+        points
+    }
+}

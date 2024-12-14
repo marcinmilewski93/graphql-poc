@@ -1,0 +1,14 @@
+mutation Payment {
+    payment(
+        request: {
+            customerId: "9841",
+            price: "200.50",
+            priceModifier: 0.95,
+            paymentMethod: "MASTERCARD",
+            datetime: "2022-03-01T01:00:00Z",
+            additionalItem: {last4: "5678"}
+        }) {
+        finalPrice
+        points
+    }
+}
