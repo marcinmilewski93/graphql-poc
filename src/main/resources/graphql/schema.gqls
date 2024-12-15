@@ -2,7 +2,7 @@ scalar Object
 scalar DateTime
 
 type Mutation {
-    payment(request: PaymentDTOInput!): PaymentResponse!
+    payment(request: PaymentDTO!): PaymentResponse!
 }
 
 type Query {

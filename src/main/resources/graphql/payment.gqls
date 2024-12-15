@@ -1,4 +1,4 @@
-input PaymentDTOInput {
+input PaymentDTO {
     customerId: String!
     price: String!
     priceModifier: Float!

@@ -5,8 +5,7 @@ import com.graphql.spring.boot.test.GraphQLTestTemplate
 import com.marcinmilewski.config.PostgresContextInitializer
 import com.marcinmilewski.db.tables.Payments.Companion.PAYMENTS
 import org.jooq.DSLContext
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.jupiter.params.ParameterizedTest
@@ -24,13 +23,12 @@ import java.nio.file.Files
 import java.nio.file.Paths
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import kotlin.test.assertNotNull
 
 @ExtendWith(SpringExtension::class)
 @TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(initializers = [PostgresContextInitializer::class])
-class SaleControllerIT(
+class PaymentControllerIT(
     @Autowired private val graphQlTest: GraphQLTestTemplate,
     @Autowired private val dslContext: DSLContext
 ) {

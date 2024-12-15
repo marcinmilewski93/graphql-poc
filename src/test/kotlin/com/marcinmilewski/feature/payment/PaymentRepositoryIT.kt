@@ -4,6 +4,7 @@ import com.marcinmilewski.config.PostgresContextInitializer
 import com.marcinmilewski.db.tables.Payments.Companion.PAYMENTS
 import org.jooq.DSLContext
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -15,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional
 import java.math.BigDecimal
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import kotlin.test.assertNotNull
 
 @Transactional
 @ExtendWith(SpringExtension::class)

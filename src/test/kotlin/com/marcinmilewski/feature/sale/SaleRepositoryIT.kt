@@ -1,6 +1,7 @@
 package com.marcinmilewski.feature.sale
 
 import com.marcinmilewski.config.PostgresContextInitializer
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -14,7 +15,6 @@ import java.math.BigDecimal
 import java.time.LocalDateTime
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
-import kotlin.test.assertEquals
 
 @Transactional
 @ExtendWith(SpringExtension::class)
