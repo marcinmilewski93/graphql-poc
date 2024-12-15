@@ -1,0 +1,10 @@
+input SalesDTO {
+    startTime: DateTime!
+    endTime: DateTime!
+}
+
+type Sale {
+    datetime: DateTime!
+    sales: String!
+    points: Int!
+}

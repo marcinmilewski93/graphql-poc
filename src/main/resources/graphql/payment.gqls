@@ -1,0 +1,13 @@
+input PaymentDTO {
+    customerId: String!
+    price: String!
+    priceModifier: Float!
+    paymentMethod: String!
+    datetime: DateTime!
+    additionalItem: Object!
+}
+
+type PaymentResponse {
+    finalPrice: String!
+    points: Int!
+}

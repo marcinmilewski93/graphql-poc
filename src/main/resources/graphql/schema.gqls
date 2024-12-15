@@ -1,0 +1,10 @@
+scalar Object
+scalar DateTime
+
+type Mutation {
+    payment(request: PaymentDTO!): PaymentResponse!
+}
+
+type Query {
+    sales(request: SalesDTO!): [Sale]!
+}

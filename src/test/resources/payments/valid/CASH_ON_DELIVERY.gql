@@ -1,0 +1,14 @@
+mutation Payment {
+    payment(
+        request: {
+            customerId: "12345",
+            price: "200.50",
+            priceModifier: 1.02,
+            paymentMethod: "CASH_ON_DELIVERY",
+            datetime: "2022-03-01T01:00:00Z",
+            additionalItem: {courier: "YAMATO"}
+        }) {
+        finalPrice
+        points
+    }
+}
